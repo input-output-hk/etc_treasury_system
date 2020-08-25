@@ -1,0 +1,10 @@
+# Dependency directory
+node_modules/
+
+# Coverage directory used by tools like istanbul
+coverage
+coverage.json
+coverageEnv
+
+#compiled contracts
+build/contracts
