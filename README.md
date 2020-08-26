@@ -1,6 +1,6 @@
 # ETC Treasury
 
-Prototype implementation of a proto-Ethereum Classic Treasury System (p-ECTS). The purpose of this codebase is only to start-up discussions on it's interface and intended behaviour, **this codebase should not be used on any productive environment** until further testing and security analysis are done on it.
+Prototype implementation of a proto-Ethereum Classic Treasury System (p-ECTS). The purpose of this codebase is only to startup discussions on its interface and intended behaviour, **this codebase should not be used on any production environment** until further testing and security analysis have been carried out on it.
 
 ## Requirements
 
