@@ -20,9 +20,10 @@ contract Treasury is ITreasury {
     // Time since shutdown is scheduled till it can be executed
     uint256 public shutdownGracePeriod = 7 days;
 
-    // FIXME: min quorum was set to 30% of the total supply at the moment of development of this
-    //        contract but the value should be dinamically calculated (at least based on an estimation
-    //        of it)
+    // FIXME (issue #6):
+    //      min quorum was set to 30% of the total supply at the moment of development of this
+    //      contract but the value should be dinamically calculated (at least based on an estimation
+    //      of it)
     // Amount of ETC required to have participated on the voting for this proposal to be applicable
     function proposalMinQuourum() virtual public pure returns(uint256) { return 35000000 ether; }
 
@@ -111,7 +112,7 @@ contract Treasury is ITreasury {
     uint256 shutdownScheduledAt = 0;
 
 
-    // FIXME: should we pass the names as well?
+    // FIXME (issue #4): should we pass the names as well?
     constructor (address _gitcoinAddress, address[] memory _clients) public {
         gitcoinMember = Member(_gitcoinAddress, "Gitcoin");
         for (uint i = 0; i < _clients.length; i++) {
@@ -149,7 +150,7 @@ contract Treasury is ITreasury {
                 totalMembersFunds += fundsForEachClient;
             }
         } else {
-            // FIXME: save the funds for future clients and update totalMembersFunds
+            // FIXME (issue #5): save the funds for future clients and update totalMembersFunds
         }
     }
 
@@ -486,7 +487,7 @@ contract Treasury is ITreasury {
     }
 
     function addClient(address clientToAdd) internal {
-        // FIXME: add name to the proposal or allow name owner editing
+        // FIXME (issue #4): add name to the proposal or allow name owner editing
         clients.push(Member(clientToAdd, ""));
         emit ClientAdded(clientToAdd);
     }
