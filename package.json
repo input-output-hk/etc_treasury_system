@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "prettier": "2.0.5"
-  },
+  },  
   "devDependencies": {
     "@openzeppelin/test-helpers": "0.5.6",
     "babel-eslint": "10.1.0",
@@ -39,7 +39,13 @@
     "url": "git+https://github.com/input-output-hk/etc_treasury_system.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/input-output-hk/etc_treasury_system/issues"
   },
