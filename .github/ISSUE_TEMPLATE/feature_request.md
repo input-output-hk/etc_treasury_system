@@ -1,7 +1,6 @@
 ---
 name: Feature request
 about: Suggest an idea for the ETC proto-treasury prototype
-
 ---
 
 ## Motivation

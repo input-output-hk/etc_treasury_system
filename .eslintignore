@@ -1,0 +1,20 @@
+# folders
+artifacts/
+build/
+cache/
+coverage/
+dist/
+lib/
+node_modules/
+typechain/
+profiles/
+docs/
+.gitlab/
+.vscode/
+_tmp/
+abi/
+
+# files
+.solcover.js
+coverage.json
+tsconfig.json
