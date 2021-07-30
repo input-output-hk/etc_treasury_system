@@ -1,7 +1,6 @@
 ---
 name: Bug report
 about: Report a bug in the ETC proto-treasury prototype
-
 ---
 
 ## Expected Behavior
@@ -16,8 +15,8 @@ _Explanation of the expected feature/corner case behaviour_
 
 _**Optional** Add here any ideas you have on alternatives for fixing the bug_
 
-##  Steps to Reproduce the Problem
+## Steps to Reproduce the Problem
 
-  1. Call ... function with parameters ...
-  2. Call ... another function with parameters ...
-  3. See the error
+1. Call ... function with parameters ...
+2. Call ... another function with parameters ...
+3. See the error

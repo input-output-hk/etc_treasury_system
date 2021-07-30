@@ -4,7 +4,7 @@ _A clear and concise description of what this pull request does or fixes._
 
 # Proposed Solution
 
-_**Optional** Explain how does this PR solves the problem stated in [Description](#Description). You can also enumerate different alternatives considered while approach$
+\_**Optional** Explain how does this PR solves the problem stated in [Description](#Description). You can also enumerate different alternatives considered while approach\$
 
 # Important Changes Introduced
 
