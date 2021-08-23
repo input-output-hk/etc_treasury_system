@@ -157,14 +157,12 @@ contract Treasury {
   /// @notice Function to withdraw the amount from the contract and send it to the caller
   /// @param to The address for sending the amount
   /// @param amount The amount to be sent
-  /// @return transferSuccessful a boolean representing the success of the tansfer transaction
   /// @dev The disabled slitter commnad was added to prevent a false Detector
-  function transferTo(address to, uint256 amount) internal returns (bool) {
+  function transferTo(address to, uint256 amount) internal {
     /// @dev this is not an arbitrary send - is being validated
     // slither-disable-next-line arbitrary-send
     (bool transferSuccessful, ) = to.call{ value: amount }("");
     require(transferSuccessful, "TransferTo function failed");
-    return transferSuccessful;
   }
 
   /// @notice Function to calculate all funds received
