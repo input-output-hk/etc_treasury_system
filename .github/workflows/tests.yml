@@ -1,0 +1,31 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: master
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  test-and-lint:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.17.5]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      # solves issue https://github.com/actions/setup-node/issues/214
+      - name: Reconfigure git to use HTTP authentication
+        run: >
+          git config --global url."https://github.com/".insteadOf
+          ssh://git@github.com/
+      - run: npm ci
+      - run: npm test
+      - run: npm run lint

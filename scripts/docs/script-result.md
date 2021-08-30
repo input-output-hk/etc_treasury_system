@@ -1,7 +1,6 @@
-`dev@NTBK-Dev16:~/dev/_git/etc-treasury(ECSC-97-npm-audit-revision)$` 
-`npm run test-treasury-gnosis -- --network sagano`
+`$npm run test-treasury-gnosis -- --network sagano`
 
-> etc-treasury@1.0.0 test-treasury-gnosis /home/dev/_git/etc-treasury
+> etc-treasury@1.0.0 test-treasury-gnosis $HOME/etc-treasury
 > hardhat run "./scripts/deploy-treasury&gnosis-testnet.ts" "--network" "sagano"
 
 No need to generate any newer typings.
@@ -87,6 +86,6 @@ Contract Balance is:               90000000000000000
 MultisigBalance Balance is:        110000000000000000
 
  ===>> Script Finished - Bye !!
-dev@NTBK-Dev16:~/dev/_git/etc-treasury(ECSC-97-npm-audit-revision)$ 
+$ 
 
 
